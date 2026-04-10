@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "surf-app",
+    "name": "SurfReady",
     "slug": "surf-app",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -12,8 +12,14 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "extra": {
+      "claudeApiKey": "YOUR_ANTHROPIC_KEY_HERE"
+    },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "We need access to your photo library so you can select a pose photo for analysis."
+      }
     },
     "android": {
       "adaptiveIcon": {
